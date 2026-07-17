@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saboteur II mod - thealfest</title>
+<script src="https://cdn.rvmplayer.org/rvmplayer.plus3.0.1.1.min.js"></script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    max-width: 100vw;
+  }
+</style>
+</head>
+<body>
+  <div class="container"></div>
+  <script>
+    const c = document.querySelector('.container');
+    rvmPlayer_plus3(c, {
+      disk: {
+        type: 'dsk',
+        url: './saboteur2_128k_mod_by_thealfest_v1.2.5.dsk'
+      },
+      command: '\n',
+      pause: true,
+      video: true,
+      videoMode: 'tv',
+      warpFrames: 0
+    });
+  </script>
+</body>
+</html>
